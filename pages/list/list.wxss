@@ -1,0 +1,110 @@
+.list_centent {
+  width: 100%;
+  height: 100%;
+  padding: 14rpx;
+  background-color: #fff;
+}
+
+.list_centent .list_wrap {
+  width: 100%;
+  background-color: #FAE3D6;
+  border-radius: 14rpx;
+  padding: 30rpx 20rpx;
+  margin-bottom: 14rpx;
+}
+
+.list_centent .list_wrap .name {
+  font-size: 38rpx;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.list_wrap .name .tags {
+  padding: 4rpx 8rpx;
+  margin-left: 20rpx;
+  margin-bottom: 4rpx;
+  font-size: 24rpx;
+  color: #666;
+  font-weight: normal;
+  background-color: #F2B227;
+  border-radius: 8rpx;
+}
+
+.list_centent .list_wrap .shopMessage {
+  position: relative;
+  font-size: 28rpx;
+  padding-top: 12rpx;
+}
+
+.list_wrap .shopMessage .score {
+  color: orange;
+}
+
+.list_wrap .shopMessage .phone {
+  color: #555;
+}
+.list_wrap .shopMessage .distance {
+  position: absolute;
+  top: 0;
+  right: 25rpx;
+  font-size: 24rpx;
+  color: #555;
+}
+
+.list_wrap .businessHours {
+  font-size: 28rpx;
+  color: #555;
+}
+ 
+.list_wrap .supportService {
+  color: #666;
+  width: 75%;
+  font-size: 28rpx;
+  line-height: 42rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.list_wrap .supportService .service {
+  font-size: 24rpx;
+  color: #fff;
+  padding: 4rpx 8rpx;
+  background-color: #F54C45;
+  border-radius: 8rpx;
+  margin-right: 10rpx;
+}
+
+.list_wrap .address {
+  font-size: 28rpx;
+  color: #666;
+  width: 90%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.list_wrap .images {
+  display: flex;
+  width: 100%;
+  height: 180rpx;
+}
+
+.list_wrap .shop_image {
+  flex: 33.3333%;
+  margin: 10rpx;
+  width: 30%;
+  height: 100%;
+}
+
+.list_wrap .shop_image image {
+  width: 100%;
+  height: 100%;
+  border-radius: 8rpx;
+}
+
+.noMore {
+  font-size: 24rpx;
+  text-align: center;
+  color: #999;
+}

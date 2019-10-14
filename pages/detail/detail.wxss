@@ -1,0 +1,198 @@
+.store_detail {
+  width: 100%;
+  height: 100%;
+  padding: 14rpx;
+}
+
+/*轮播图*/
+.swiper_wrap swiper {
+  height: 450rpx;
+}
+
+.swiper_wrap navigator {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper_wrap .swiper_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8rpx;
+}
+
+
+/*店铺详情*/
+.store_detail .list_wrap {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 14rpx;
+  padding: 30rpx 20rpx;
+  margin-bottom: 14rpx;
+}
+
+.store_detail .list_wrap .name {
+  font-size: 38rpx;
+  font-weight: 700;
+
+  vertical-align: middle;
+}
+
+.list_wrap .name .tags {
+  padding: 4rpx 8rpx;
+  margin-left: 20rpx;
+  margin-bottom: 4rpx;
+  font-size: 24rpx;
+  color: #666;
+  font-weight: normal;
+  background-color: #F2B227;
+  border-radius: 8rpx;
+}
+
+.store_detail .list_wrap .shopMessage {
+  position: relative;
+  font-size: 28rpx;
+  padding-top: 12rpx;
+}
+
+.list_wrap .shopMessage .score {
+  color: orange;
+}
+
+.list_wrap .shopMessage .phone {
+  color: #555;
+}
+.list_wrap .shopMessage .distance {
+  position: absolute;
+  top: 0;
+  right: 25rpx;
+  font-size: 24rpx;
+  color: #555;
+}
+
+.list_wrap .businessHours {
+  font-size: 28rpx;
+  color: #555;
+}
+ 
+.list_wrap .supportService {
+  color: #666;
+  width: 100%;
+  font-size: 28rpx;
+  line-height: 42rpx;
+}
+
+.list_wrap .supportService .service {
+  font-size: 24rpx;
+  color: #fff;
+  padding: 4rpx 8rpx;
+  background-color: #F54C45;
+  border-radius: 8rpx;
+  margin-right: 10rpx;
+}
+
+.list_wrap .address {
+  font-size: 28rpx;
+  color: #666;
+  width: 100%;
+}
+
+/*客户评论*/
+.comment_wrap {
+  width: 100%;
+  margin-top: 10rpx;
+}
+
+.comment_wrap .comment_header {
+  width: 100%;
+  font-size: 32rpx;
+  padding: 20rpx;
+  line-height: 45rpx;
+  font-weight: 700;
+  border-radius: 8rpx;
+  background-color: #f2f2f2;
+}
+
+.comment_wrap .filter_comment {
+  width: 100%;
+}
+.comment_wrap .filter_comment .box {
+  display: flex;
+  width: 50%;
+  margin: 20rpx auto;
+  border: 1px solid #FABC34;
+  border-radius: 8rpx;
+}
+
+.comment_wrap .filter_comment text {
+  flex: 50%;
+  color: #F2B227;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  text-align: center;
+}
+
+.comment_wrap .filter_comment text.active {
+  color: #000;
+  background-color: #F2B227;
+}
+
+.comment_wrap .comment_box {
+  padding: 20rpx 0;
+}
+
+.comment_box .comment_detail {
+  display: flex;
+  padding: 20rpx 0;
+  border-bottom: 1rpx dashed #E0E0E0;
+}
+
+.comment_box .comment_detail .comment_left {
+  flex: 0 0 80rpx;
+}
+
+.comment_detail .comment_left .header_img {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.comment_box .comment_detail .comment_right {
+  flex: auto;
+  padding-left: 14rpx;
+}
+
+.comment_detail .comment_right .user_msg {
+  position: relative;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.comment_right .user_msg .comment_time {
+  position: absolute;
+  top: 0;
+  right: 10rpx;
+}
+
+.comment_right .rating {
+  font-size: 24rpx;
+  padding-top: 6rpx;
+  color: #F2B227;
+}
+
+.comment_right .content {
+  padding: 14rpx 0;
+  font-size: 24rpx;
+  color: #333;
+}
+
+.comment_right .comment_image {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.comment_right .image {
+  flex: 33.333%;
+  width: 150rpx;
+  height: 150rpx;
+  margin-right: 10rpx;
+  border-radius: 8rpx;
+}

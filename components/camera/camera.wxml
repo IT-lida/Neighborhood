@@ -1,0 +1,22 @@
+<view class="main">
+  <button 
+    class="upload_button" 
+    size="mini" type="primary" 
+    form-type="submit"
+    bind:tap="SendOutInfo"
+    >发表</button>
+  <view class="input_word">
+    <textarea 
+      placeholder="这一刻的想法..." 
+      bindinput="currentValue"></textarea>
+  </view>
+  <view class="img_box">
+    <view class="img" wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+      <image src="{{item}}" data-index="{{index}}" mode="aspectFill" bindtap="previewImg"></image>
+      <view class="delete_btn" data-index="{{index}}" catchtap="deleteImg">删除</view>
+    </view>
+    <view class="upload_img_btn" bindtap="chooseImg" wx:if="{{imgs.length<9}}">
+      <image class="upload_img" src="../../image/count.png" mode="scaleToFill"></image>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,129 @@
+@import "/styles/iconfont.wxss";
+
+.main {
+  width: 100%;
+  height: 100%;
+  padding: 10rpx 20rpx;
+}
+
+/*头部样式*/
+.header {
+  display: flex;
+  width: 100%;
+}
+
+.header_left {
+  flex: 1;
+}
+
+.header_left .header_text {
+  display: inline-block;
+  color: #9A9C99;
+  font-size: 32rpx;
+  padding: 5rpx 0 0 10rpx;
+  vertical-align: top;
+}
+
+.header_right {
+  text-align: right;
+}
+
+/*轮播图*/
+.swiper_wrap {
+  margin-top: 16rpx;
+}
+
+.swiper_wrap swiper {
+  height: 300rpx;
+}
+
+.swiper_wrap navigator {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper_wrap .swiper_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8rpx;
+}
+
+/*功能列表*/
+.menu_wrap {
+  position: relative;
+  display: flex;
+  flex-flow: wrap;
+  width: 100%;
+  margin-top: 16rpx;
+  border-radius: 8rpx;
+}
+
+.background_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.menu_wrap .menu_list {
+  flex: 33%;
+  width: 33%;
+}
+
+
+.menu_wrap .menu_list .munu_icon {
+  width: 100%;
+  line-height: 50rpx;
+  text-align: center;
+  padding: 20rpx 0;
+  border-bottom: 1px solid #C7C4BD;
+  border-right: 1px solid #C7C4BD;
+  border-radius: 8rpx;
+}
+
+.menu_list .munu_icon .icon {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.menu_list .munu_icon .menu_name {
+  font-size: 24rpx;
+  font-weight: 700;
+  color: #444;
+}
+
+/*专栏*/
+.column_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 190rpx;
+  margin-top: 10rpx;
+}
+
+.column_wrap .column_box {
+  position: relative;
+  flex: 45%;
+  height: 100%;
+  margin: 10rpx;
+}
+
+.column_wrap .column_box .bac_img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8rpx;
+  z-index: -1;
+}
+
+.column_wrap .column_box .column_text {
+  font-size: 36rpx;
+  color: #de688b;
+  font-weight: 700;
+  text-align: center;
+  line-height: 95px;
+}

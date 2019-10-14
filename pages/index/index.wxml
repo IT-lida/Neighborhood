@@ -1,0 +1,53 @@
+<loading wx:if="{{ show }}" hidden="{{ loadingHidden }}">正在加载...</loading>
+<view wx:else class="main">
+  <view class="header">
+    <view class="header_left">
+      <navigator class="search" url="../../components/search/search" open-type="navigate">
+        <text class="iconfont icon-sousuo" style="color: #000; font-size:50rpx; font-weight: 900;"></text>
+        <text class="header_text">搜索你感兴趣的内容</text>
+      </navigator>
+    </view>
+    <view class="header_right">
+      <navigator url="../../components/scan/scan" open-type="navigate">
+        <text class="iconfont icon-saoyisao" style="color: #000; font-size:50rpx; font-weight: 900;"></text>
+      </navigator>
+    </view>
+  </view>
+  <view class="swiper_wrap">
+    <swiper autoplay indicator-dots circular indicator-active-color="#de688b">
+      <swiper-item wx:for="{{ swiperList }}" wx:key="{{ index }}">
+        <navigator wx:if="{{ item.link }}" url="{{ item.link }}">
+          <image class="swiper_img" src="{{ item.image }}" mode="scaleToFill"></image>
+        </navigator>
+        <image wx:else class="swiper_img" src="{{ item.image }}" mode="scaleToFill"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="menu_wrap">
+    <view class="menu_list" wx:for="{{ menubarList }}" wx:key="{{ item.id }}">
+      <navigator class="munu_icon" url="../list/list?cat={{item.id}}">
+        <image class="icon" src="{{ item.icon }}"></image>
+        <view class="menu_name">{{item.name}}</view>
+      </navigator>
+    </view>
+    <image class="background_img" src="../../image/background.png"></image>
+  </view>
+  <view class="column_wrap">
+    <navigator class="column_box">
+      <image class="bac_img" src="../../image/img_01.png"></image>
+      <view class="column_text">商家推荐</view>
+    </navigator>
+    <navigator class="column_box">
+      <image class="bac_img" src="../../image/img_02.png"></image>
+      <view class="column_text">社区交友</view>
+    </navigator>
+    <navigator class="column_box">
+      <image class="bac_img" src="../../image/img_03.png"></image>
+      <view class="column_text">附近娱乐</view>
+    </navigator>
+    <navigator class="column_box">
+      <image class="bac_img" src="../../image/img_04.png"></image>
+      <view class="column_text">每日鲜菜</view>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+<view class="me_main">
+  <view class="me_background"></view>
+  <c-button
+    wx:if="{{ !authorize }}"
+    open-type="getUserInfo"
+    class="get_user_info"
+    bind:getuserinfo="onGetUserInfo">
+    <image class="header_image" src="/image/header.png" slot="img"></image>
+  </c-button>
+  <view
+    wx:if="{{ authorize }}"
+    class="get_user_info">
+    <image class="header_image" src="{{ userInfo.avatarUrl }}"></image>
+    <text class="header_text">{{ userInfo.nickName }}</text>
+  </view>
+</view>

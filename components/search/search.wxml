@@ -1,0 +1,12 @@
+<view class="search_box">
+  <view class="search_wrap">
+    <input class="search_text" type="text" placeholder='搜索你感兴趣的内容'></input>
+    <text class="iconfont icon-sousuo" style="color: #000; font-size:50rpx; font-weight: 900;text-align: right;"></text>
+  </view>
+  <view class="hotTopic">
+    ---- 大家都在搜 ----
+  </view>
+  <view class="hot_wrap">
+    <text class="hot_text" wx:for="{{ hotTopic }}" wx:key="{{ item.id }}">{{ item.text }}</text>
+  </view>
+</view>

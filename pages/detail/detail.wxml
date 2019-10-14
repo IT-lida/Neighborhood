@@ -1,0 +1,63 @@
+<loading wx:if="{{ show }}" hidden="{{ loadingHidden }}">正在加载...</loading>
+
+<view wx:else class="store_detail">
+  <view class="swiper_wrap">
+    <swiper autoplay circular>
+      <swiper-item wx:for="{{ store.images }}" wx:key="{{ index }}">
+          <image class="swiper_img" src="{{ item }}" mode="scaleToFill"  bind:tap="previewImage" data-set="{{ item }}"></image>
+          }
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="list_wrap">
+    <view class="name">
+      {{store.name}}
+      <text class="tags">{{store.tags}}</text>
+    </view>
+    <view class="shopMessage">
+      <text class="score">{{ store.score }}分</text> | 
+      <text class="phone">{{ store.phone }}</text>
+    </view>
+    <view class="businessHours">{{ store.businessHours }}</view>
+    <view class="supportService">
+      <text class="service">专享服务</text>
+      {{ store.supportService }}
+    </view>
+    <view class="address">{{ store.address }}</view>
+  </view>
+  <view class="comment_wrap">
+    <view class="comment_header">客户评价</view>
+    <view class="filter_comment">
+      <view class="box">
+        <text class="active">全部</text>
+        <text>有图</text>
+      </view>
+    </view>
+    <view class="comment_box">
+      <view class="comment_detail" wx:for="{{ store.comments }}" wx:key="{{ index }}">
+        <view class="comment_left">
+          <image class="header_img" src="../../image/header.png"></image>
+        </view>
+        <view class="comment_right">
+          <view class="user_msg">
+            <text class="user_name">{{item.name}}</text>
+            <text class="comment_time">{{item.date}}</text>
+          </view>
+          <view class="rating">评分:{{item.rating}}</view>
+          <view class="content">{{item.content}}</view>
+          <view class="comment_image" wx:for="{{ item.images }}" wx:key="*this">
+            <image class="image" src="{{ filter.size(item) }}"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<wxs module="filter">
+  module.exports = {
+    size: function(url) {
+      return url.replace('w.h', '100.100')
+    }
+  }
+</wxs> 

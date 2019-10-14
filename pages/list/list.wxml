@@ -1,0 +1,28 @@
+<view class="list_centent">
+  <navigator class="list_wrap" url="../detail/detail?item={{ item.id }}" wx:for="{{ shops }}" wx:key="{{ item.id }}">
+    <view class="name">
+      {{item.name}}
+      <text class="tags">{{item.tags}}</text>
+    </view>
+    <view class="shopMessage">
+      <text class="score">{{ item.score }}分</text> | 
+      <text class="phone">{{ item.phone }}</text>
+      <text class="distance">
+        ＜2km
+      </text>
+    </view>
+    <view class="businessHours">{{ item.businessHours }}</view>
+    <view class="supportService">
+      <text class="service">专享服务</text>
+      {{ item.supportService }}
+    </view>
+    <view class="address">{{ item.address }}</view>
+    <view class="images">
+      <view class="shop_image"><image src="{{ item.images[0] }}"></image></view>
+      <view class="shop_image"><image src="{{ item.images[1] }}"></image></view>
+      <view class="shop_image"><image src="{{ item.images[2] }}"></image></view>
+    </view>
+  </navigator>
+  <loading wx:if="{{ hasMore }}" hidden="{{ loadingHidden }}">正在加载...</loading>
+  <view wx:else class="noMore">到底了！</view>
+</view>

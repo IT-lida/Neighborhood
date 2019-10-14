@@ -1,0 +1,27 @@
+<view class="main">
+  <view class="main_up">
+    <view class="me_background"></view>
+    <view class="header_box">
+      <open-data class="user_NickName" type="userNickName"></open-data>
+      <open-data class="user_header" type="userAvatarUrl"></open-data>
+    </view>
+  </view>
+  <view class="comment_box">
+    <view class="comment_detail" wx:for="{{ CommunityMessage }}" wx:key="{{ item.id }}">
+      <view class="comment_left">
+        <image class="header_img" src="{{item.headerIcon}}"></image>
+      </view>
+      <view class="comment_right">
+        <view class="user_name">{{item.name}}</view>
+        <view class="content">{{item.message}}</view>
+        <view class="comment_image" wx:for="{{ item.images }}" wx:key="*this">
+          <image class="image" src="{{ item }}" bind:tap="previewImage" data-set="{{ item }}"></image>
+        </view>
+        <view class="currentTime">{{item.time}}</view>
+      </view>
+    </view>
+  </view>
+  <navigator class="camera" url="../../components/camera/camera" open-type="navigate">
+    <image class="icon" src="../../image/camera.png"></image>
+  </navigator>
+</view>

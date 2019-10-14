@@ -1,0 +1,9 @@
+<view class="scan_wrap">
+  <view class=" border border_leftUp"></view>
+  <view class=" border border_leftDown"></view>
+  <view class=" border border_rightUp"></view>
+  <view class=" border border_rightDown"></view>
+  <view class=" line" animation="{{ animationData }}"></view>
+  <camera mode="scanCode" device-position="back" flash="off" binderror="error" style="width: 200px; height: 200px;"></camera>
+  <view class="scan_start" bind:tap="go">扫一扫</view>
+</view>

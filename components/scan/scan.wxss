@@ -1,0 +1,71 @@
+/* components/scan.wxss */
+
+.scan_wrap {
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  position: relative;
+  background-color: #333;
+}
+
+.scan_wrap .border {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.scan_wrap .border_leftUp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #00B26A;
+  border-left: 4px solid #00B26A;
+  z-index: 100;
+}
+
+.scan_wrap .border_leftDown {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: 4px solid #00B26A;
+  border-left: 4px solid #00B26A;
+  z-index: 100;
+}
+
+.scan_wrap .border_rightUp {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 4px solid #00B26A;
+  border-right: 4px solid #00B26A;
+  z-index: 100;
+} 
+
+.scan_wrap .border_rightDown {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-bottom: 4px solid #00B26A;
+  border-right: 4px solid #00B26A;
+  z-index: 100;
+}
+
+.scan_wrap .line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 5px solid #00B26A;
+  z-index: 100;
+}
+
+.scan_wrap .scan_start {
+  width: 150px;
+  height: 50px;
+  margin: 50px auto;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #07BDFD;
+}
